@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finn din flytur</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form action="https://www.norwegian.no/ipc/availability/avaday">
+        
+        <div>
+            <select name="D_City" required>
+                <option value="">Velg flyplass for avreise</option>
+                <option value="OSL">Oslo(Alle flyplasser)</option>
+                <option value="BDG">Bergen</option>
+                <option value="TRD">Trondheim</option>
+            </select>
+        </div>
+
+        
+        <div>
+            <select name="A_City" required>
+                <option value="">Velg flyplass for landing</option>
+                <option value="OSL">Oslo(Alle flyplasser)</option>
+                <option value="BDG">Bergen</option>
+                <option value="TRD">Trondheim</option>
+            </select>
+         </div>
+
+         <div>
+             <label>Antall reisende</label>
+             <input 
+             required
+             type="number" 
+             name="AdultCount" 
+             value="2" 
+             min="1" max="10">
+         </div>
+
+         <div>
+             <label for="rb-tur-retur">Tur/retur</label>
+             <input id="rb-tur-retur" type="radio" name="TripType" value="2">
+
+             <label for="rb-en-vei">En vei</label>
+             <input id="rb-en-vei" type="radio" name="TripType" value="1">
+         </div>
+        
+        <div>
+            <button type="submit">SØK PÅ FLYTUR</button>
+        </div>
+    </form>
+</body>
+</html>

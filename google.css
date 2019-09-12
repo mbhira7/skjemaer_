@@ -1,0 +1,25 @@
+form{
+    display: grid;
+    grid-template-columns: 300px 100px; /*Inputen er 300px bred og knappen 100px bred*/
+}
+
+input[type=text]{
+    padding:16px;
+    font-size:22px;
+    background-color: #eee;
+    border:1px solid #ccc;
+    width:60px;
+    border-radius:7px 0 0 7px; /*border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius*/
+    transition:0.5s;
+}
+
+input[type=text]:focus{
+    width:300px;
+    outline: none;
+    background-color: rgb(69, 83, 83);
+}
+
+button{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="./google.css">
+</head>
+<body> <!--Autofocus required:obligatorisk felt ellers feilmelding, 
+            q:lagrer alle søkene i en query. autofocus:brukeren slipper å klikke inn i søkefeltet manuelt. pilen havner der automatisk
+            autocomplete="off": det du har søkt på tidligere dukker ikke opp som forslag-->
+   <form action="https://www.google.no/search">
+       <input 
+       autofocus                                              
+       type="text" 
+       name="q" 
+       required
+       placeholder="Søk på google"
+       autocomplete="off">
+       <button type="submit">SØK</button>
+   </form> 
+
+</body>
+</html>
